@@ -6,9 +6,9 @@ CREATE TABLE IF NOT EXISTS tbl_bookie_broker (
     broker_person_last_name VARCHAR(200) NOT NULL,
     broker_email_id VARCHAR(256) NOT NULL,
     broker_contact_no VARCHAR(10) NOT NULL,
-    org_address VARCHAR(100) NOT NULL,
-	org_country VARCHAR(50) NOT NULL,
-	org_state VARCHAR(50) NOT NULL,
-	org_city VARCHAR(50) NOT NULL,
-	org_zip_code VARCHAR(10) NOT NULL
+    party_address VARCHAR(100) NOT NULL,
+	party_country VARCHAR(50) NOT NULL,
+	party_state VARCHAR(50) NOT NULL,
+	party_city VARCHAR(50) NOT NULL,
+	party_zip_code VARCHAR(10) NOT NULL
 );
