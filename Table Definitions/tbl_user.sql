@@ -8,5 +8,5 @@ CREATE TABLE IF NOT EXISTS tbl_user (
     user_enabled_YN CHAR(1) NOT NULL,
     user_login_date_time TIMESTAMP,
     user_login_fail_tries SMALLINT,
-    user_password VARCHAR(100) NOT NULL
+    user_password VARCHAR(25) NOT NULL
 );
