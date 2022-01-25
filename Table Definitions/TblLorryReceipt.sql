@@ -1,0 +1,15 @@
+CREATE SEQUENCE IF NOT EXISTS lorry_receipt_no_seq;
+
+CREATE TABLE IF NOT EXISTS TblLorryReceipt (
+    OrgId UUID NOT NULL REFERENCES TblOrg (Id),
+    BookieId UUID NOT NULL REFERENCES TblOrgBookieAccount (Id),
+    Id UUID DEFAULT UUID_GENERATE_V4 () NOT NULL PRIMARY KEY,
+    No INTEGER NOT NULL DEFAULT NEXTVAL('lorry_receipt_no_seq'),
+    Origin VARCHAR(64) NOT NULL,
+    Destination VARCHAR(64) NOT NULL,
+    Weight NUMERIC NOT NULL,
+    Rate NUMERIC NOT NULL,
+    VehicleNo VARCHAR(10) NOT NULL,
+    PartyId UUID NOT NULL REFERENCES TblBookieParty (Id),
+    BrokerId UUID NOT NULL REFERENCES TblBookieBroker (Id)
+);
