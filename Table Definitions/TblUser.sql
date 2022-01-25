@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS TblUser (
     LastName VARCHAR(64) NOT NULL,
     EmailId VARCHAR(64) NOT NULL,
     ContactNo VARCHAR(10) NOT NULL,
-    EnabledYN CHAR(1) NOT NULL,
+    Status VARCHAR(8) NOT NULL,
     LoginDateTime TIMESTAMP,
     LoginFailTries SMALLINT,
     Password VARCHAR(25) NOT NULL
