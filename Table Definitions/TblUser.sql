@@ -7,6 +7,6 @@ CREATE TABLE IF NOT EXISTS TblUser (
     ContactNo VARCHAR(10) NOT NULL,
     Status VARCHAR(8) NOT NULL,
     LoginDateTime TIMESTAMP,
-    LoginFailTries SMALLINT,
+    LoginFailTries SMALLINT DEFAULT 0,
     Password VARCHAR(25) NOT NULL
 );
