@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS tbl_user_role (
+    OrgId UUID NOT NULL REFERENCES tbl_org (Id),
+    Id UUID DEFAULT UUID_GENERATE_V4 () NOT NULL PRIMARY KEY,
+    Name VARCHAR(64) NOT NULL,
+    BookieAccessYN CHAR(1) NOT NULL,
+    BrokerAccessYN CHAR(1) NOT NULL,
+    CreatedAt TIMESTAMP
+);
