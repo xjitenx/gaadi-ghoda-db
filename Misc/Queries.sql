@@ -1,4 +1,6 @@
+	CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
+	
 	
 	INSERT INTO public.tbl_org (
 org_person_name, org_email_id, org_contact_no, org_address, org_enabled_yn) VALUES (
