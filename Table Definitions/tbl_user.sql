@@ -7,8 +7,5 @@ CREATE TABLE IF NOT EXISTS tbl_user (
     EmailId VARCHAR(64) NOT NULL,
     ContactNo VARCHAR(10) NOT NULL,
     Status VARCHAR(8) NOT NULL,
-    CreatedAt TIMESTAMP,
-    Password VARCHAR(25) NOT NULL,
-    LoginDateTime TIMESTAMP,
-    LoginFailTries SMALLINT DEFAULT 0
+    CreatedAt TIMESTAMP
 );
